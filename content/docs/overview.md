@@ -2630,6 +2630,47 @@ Your .odin files can have a magic suffix that will cause the compiler to either 
 
 For example, `foobar_windows.odin` would only be compiled on Windows, `foobar_linux.odin` only on Linux, and `foobar_windows_amd64.odin` only on Windows AMD64.
 
+Target OS/platform suffixes:
+
+* `windows`
+	* `windows_i386`
+	* `windows_amd64`
+* `darwin`
+	* `darwin_amd64`
+	* `darwin_arm64`
+* `linux`
+	* `linux_i386`
+	* `linux_amd64`
+	* `linux_arm64`
+	* `linux_arm32`
+* `essence`
+	* `essence_amd64`
+* `freebsd`
+	* `freebsd_i386`
+	* `freebsd_amd64`
+* `openbsd`
+	* `openbsd_amd64`
+* `wasi`
+	* `wasi_wasm32`
+	* `wasi_wasm64p32`
+* `js`
+	* `js_wasm32`
+	* `js_wasm64p32`
+* `freestanding`
+	* `freestanding_amd64`
+	* `freestanding_arm64`
+	* `freestanding_wasm32`
+	* `freestanding_wasm64p32`
+
+Target architecture suffixes:
+
+* `amd64`
+* `i386`
+* `arm32`
+* `arm64`
+* `wasm32`
+* `wasm64p32`
+
 ### `when` statements
 
 Sometimes you only want to include a small number of statements or declarations for compilation, if a certain compile-time expression evaluates
