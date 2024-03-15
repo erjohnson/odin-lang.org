@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="auto">
     {{- partial "head.html" . -}}
     <body data-bs-spy="scroll" data-bs-target="#TOC" data-bs-offset="0" tabindex="0">
+    	{{- partial "icons" . -}}
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
